@@ -2,7 +2,7 @@
 
 A simple 11ty-based ref sheet display site for Kay Ohtie.
 
-# Building
+## Building
 
 ```
 npm install
