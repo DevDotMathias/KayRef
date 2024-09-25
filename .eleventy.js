@@ -42,12 +42,12 @@ module.exports = eleventyConfig => {
    // persist GH Pages custom domain
    eleventyConfig.addPassthroughCopy('CNAME');
 
-   // minify CSS - used e.g. when inlining _includes/style.css
+   // minify CSS - used e.g. when inlining _includes/custom.css
    eleventyConfig.addFilter('cssmin', function (code) {
 		return new CleanCSS({}).minify(code).styles;
 	});
 
-   // minify JS - used e.g. when inlining _includes/script.js
+   // minify JS - used e.g. when inlining _includes/custom.js
    eleventyConfig.addNunjucksAsyncFilter('jsmin', async function (code, callback) {
       try {
          const minified = await minify(code);
