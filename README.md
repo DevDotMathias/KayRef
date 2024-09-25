@@ -9,6 +9,8 @@ A simple [11ty](https://www.11ty.dev/)-based ref sheet display site for Kay Ohti
 
 Images are automatically resized to 600px and 1200px widths, if larger, with `eleventy-img`. `<img>` tags generated from Markdown are updated with the new sizes. Original images are copied as-is to `dist/images` alongside the resized versions.
 
+CSS in `src/_includes/custom.css` and JS in `src/_includes/custom.js` are minified at build with CleanCSS and Terser and inlined.
+
 ## Github Pages
 
 Auto-builds for Github Pages. Set your custom domain in the CNAME file, and after the first build runs, set Pages to deploy from a branch. Choose `gh-pages`.
