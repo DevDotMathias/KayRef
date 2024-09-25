@@ -35,7 +35,7 @@ module.exports = eleventyConfig => {
    });
 
    // copy originals, because we don't need >1200px in the srcset, and eleventy-img auto is sometimes larger file size than orig
-   eleventyConfig.addPassthroughCopy('src/images'); 
+   eleventyConfig.addPassthroughCopy('images'); 
 
    // persist GH Pages custom domain
    eleventyConfig.addPassthroughCopy('CNAME');
