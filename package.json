@@ -1,0 +1,23 @@
+{
+   "name": "kayref",
+   "version": "1.0.0",
+   "description": "A simple ref sheet site for Kay Ohtie.",
+   "scripts": {
+      "dev": "eleventy --serve",
+      "build": "eleventy"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/DevDotMathias/KayRef.git"
+   },
+   "author": "Mathias W. <bork@walf.me>",
+   "license": "MIT",
+   "bugs": {
+      "url": "https://github.com/DevDotMathias/KayRef/issues"
+   },
+   "homepage": "https://github.com/DevDotMathias/KayRef#readme",
+   "devDependencies": {
+      "@11ty/eleventy": "^2.0.1",
+      "@11ty/eleventy-img": "^4.0.2"
+   }
+}
