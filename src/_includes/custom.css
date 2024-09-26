@@ -4,7 +4,7 @@
    --kr-secondary: #0369a1;
 }
 [data-bs-theme="light"] {
-   --bs-link-color-rgb: 10,106,250;
+   --bs-link-color-rgb: 10, 105, 246;
 }
 [data-bs-theme="dark"] {
    --bs-primary: #6d28d9;
