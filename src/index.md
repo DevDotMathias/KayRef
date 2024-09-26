@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 title: Main
+image: /images/KayCoyote_RefSheet_Clothes-01-600.png
 ---
 
 # Kay Ohtie's Reference Sheet
