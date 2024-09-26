@@ -1,3 +1,4 @@
+const fs = require('fs');
 const path = require('path');
 const Image = require('@11ty/eleventy-img');
 const CleanCSS = require('clean-css');
@@ -41,6 +42,10 @@ module.exports = eleventyConfig => {
 
    // persist GH Pages custom domain
    eleventyConfig.addPassthroughCopy('CNAME');
+
+   // add it as global data
+   const CNAME = fs.readFileSync(path.join(eleventyConfig.dir.output, 'CNAME'), { encoding: 'utf8' });
+   eleventyConfig.addGlobalData('siteDomain', CNAME);
 
    // minify CSS - used e.g. when inlining _includes/custom.css
    eleventyConfig.addFilter('cssmin', function (code) {
