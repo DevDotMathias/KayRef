@@ -44,7 +44,7 @@ module.exports = eleventyConfig => {
    eleventyConfig.addPassthroughCopy('CNAME');
 
    // add it as global data
-   const CNAME = fs.readFileSync(path.join(eleventyConfig.dir.output, 'CNAME'), { encoding: 'utf8' });
+   const CNAME = fs.readFileSync(path.join(__dirname, 'CNAME'), { encoding: 'utf8' });
    eleventyConfig.addGlobalData('siteDomain', CNAME);
 
    // minify CSS - used e.g. when inlining _includes/custom.css
